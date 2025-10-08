@@ -318,8 +318,8 @@ opacity: 1;
 }
 
 /* animate the shiny gradient when hovering */
-.progress:hover .progress__fill::after {
-  animation: flow 0.8s linear infinite;
+.progress .progress__fill::after {
+  animation: flow 1.0s linear infinite;
 }
 
 /* keyframes for the flowing gradient */
