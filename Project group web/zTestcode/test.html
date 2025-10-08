@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>นำเสนอหัวข้อโครงงาน</title>
+  <link rel="stylesheet" href="test.css">
+</head>
+<body>
+  <div class="wrapper">
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/25/25694.png"></a></li>
+        <li class="active"><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/1006/1006771.png"></a></li>
+        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/2921/2921222.png"></a></li>
+        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/747/747310.png"></a></li>
+        <li><a href="#"><img src="https://cdn-icons-png.flaticon.com/512/3524/3524636.png"></a></li>
+      </ul>
+    </aside>
+
+    <!-- Main content -->
+    <main class="main-content">
+      <header>
+        <h1>นำเสนอหัวข้อโครงงาน</h1>
+        <div class="user">
+          <span>นาย สมเกียรติ เจริญดี</span>
+          <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="user">
+        </div>
+      </header>
+
+      <section class="project-form">
+        <div class="form-header">
+          <button class="tab active">โครงงาน</button>
+        </div>
+
+        <table class="form-table">
+          <thead>
+            <tr>
+              <th>ชื่อหัวข้อโครงงาน</th>
+              <th>อาจารย์ที่ปรึกษา</th>
+              <th>รายละเอียดโครงงาน</th>
+              <th>สมาชิก</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><input type="text" placeholder="กรอกชื่อหัวข้อโครงงาน"></td>
+              <td><input type="text" placeholder="กรอกชื่ออาจารย์ที่ปรึกษา"></td>
+              <td>
+                <textarea placeholder="รายละเอียดโครงงาน..."></textarea>
+                <div class="upload-area">
+                  <span>หรือ</span>
+                  <button class="upload-btn" id="uploadBtn">อัปโหลดไฟล์</button>
+                  <input type="file" id="fileInput" style="display:none;">
+                  <p id="fileName" class="file-name"></p>
+                </div>
+              </td>
+              <td class="member-cell">
+                <div class="dropdown">
+                  <button class="member-btn">สมาชิก ▼</button>
+                  <div class="dropdown-content">
+                    <p>1 สมเกียรติ</p>
+                    <p>2 สมนึก</p>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="submit-container">
+          <button class="submit-btn">ส่ง</button>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <a class="portal" href="/Portal.html">ประตูมิติ</a>
+</body>
+</html>
