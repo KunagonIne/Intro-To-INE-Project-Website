@@ -27,7 +27,7 @@
             <img src="/Images/calenda.webp" alt="Teacher Icon">
             <span class="item-text">บันทึกความคืบหน้า</span>
         </a>
-          <a href="/Html/Login/index.html">
+          <a href="/index.html">
             <img src="/Images/Exit.png" alt="Teacher Icon">
             <span class="item-text">ออกจากระบบ</span>
         </a>
@@ -48,15 +48,27 @@
 
     <div class="page"> 
       <div class="meta2">
-        <div><h3>ชื่อกลุ่ม</h3></div>
-        <div><h3>หัวข้อโครงงาน</h3></div>
-        <div><h3>ผลลัพท์</h3></div>
-        <div><h3>วัตถุประสงค์</h3></div>
+        <div>
+          <h3>ชื่อกลุ่ม</h3>
+           <input class="input" type="text" placeholder="ชื่อกลุ่ม">
+        </div>
+        <div>
+          <h3>หัวข้อโครงงาน</h3>
+          <input class="input" type="text" placeholder="ชื่อหัวข้อโครงงาน">
+        </div>
+        <div>
+          <h3>ผลลัพท์</h3>
+          <textarea style="margin-top:10px;" placeholder="ผบลัพท์ที่ได้"></textarea>
+        </div>
+        <div>
+          <h3>วัตถุประสงค์</h3>
+           <textarea style="margin-top:10px;" placeholder="วัตถุประสงค์"></textarea>
+        </div>
 
-        <input class="input" type="text" placeholder="ชื่อกลุ่ม">
-        <input class="input" type="text" placeholder="ชื่อหัวข้อโครงงาน">
-        <textarea style="min-width: 300px; max-width: 300px; min-height: 100px; margin-top:10px;" placeholder="ผบลัพท์ที่ได้"></textarea>
-        <textarea style="min-width: 300px; max-width: 300px; min-height: 100px; margin-top:10px;" placeholder="วัตถุประสงค์"></textarea>
+       
+        
+        
+       
         
         <div>
           <h3>สมาชิก</h3>
@@ -136,7 +148,7 @@
 
         
 
-        <div class="btns" style="grid-column-start: 4; grid-row-end: 5; right:0px; justify-content: right;">
+        <div class="btn-container" style="justify-content: right; align-self: end;">
           <div class="btn" style="--bg:#119100; --bg-hover:#3f6f00; --text-a:#ffffff;"><a href="ProjectInfo.html">สร้างโครงงาน</a></div>
           <div class="btn" style="--bg:#ff570f; --bg-hover:#bf3900; --text-a:#ffffff;"><a href="ProjectEmpthy.html">ยกเลิก</a></div>
         </div>
