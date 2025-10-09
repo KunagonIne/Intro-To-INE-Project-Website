@@ -9,21 +9,29 @@
 </head>
 <body>
 
+   <div class="topbar">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <div>
+          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+    </div>
+
     <!--sidebar-->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
     <div class="item">
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
+        <a href="ProjectInfo.html" style="background-color: #95491a;">
+            <img src="/Images/teacher.png" alt="Teacher Icon">
+            <span class="item-text">รายละเอียดโครงงาน</span>
+        </a>
+        <a href="ProjectProgressLog.html">
+            <img src="/Images/calenda.webp" alt="Teacher Icon">
+            <span class="item-text">บันทึกความคืบหน้า</span>
+        </a>
+          <a href="/Html/Login/index.html">
+            <img src="/Images/Exit.png" alt="Teacher Icon">
+            <span class="item-text">ออกจากระบบ</span>
+        </a>
     </div>
   </div>
 
@@ -34,7 +42,7 @@
           <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
           <div style="font-size:12px;">นักศึกษา</div>
         </div>
-        <div class="avatar"></div>
+        <img class="profile" src="/Images/defaultProfile.png">
       </div>
     </div>
     
@@ -121,7 +129,9 @@
                     <div class="textarea" >ทำการแก้ไขไฟล์งาน</div>
 
                     <div style="display:flex;align-items:center;gap:8px;margin-top:8px;" class="muted">ความคิดเห็นของอาจารย์ :</div>
-                    <div style="display:flex;align-items:center;gap:8px;margin-top:8px;color: var(--muted);font-size: 15px;">รศ.ดร.อนิราช มิ่งขวัญ : เช็คตรวจเรียบร้อยดี ครบ</div>
+                    <div style="display:flex;align-items:center;gap:8px;margin-top:8px;color: var(--muted);font-size: 15px;">
+                      <img class="smallerprofile" src="/Images/defaultProfile.png">
+                      รศ.ดร.อนิราช มิ่งขวัญ : เช็คตรวจเรียบร้อยดี ครบ</div>
                 </div>
 
                 
@@ -137,6 +147,14 @@
             
         </div>
     </div>
+
+     <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        btn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
     

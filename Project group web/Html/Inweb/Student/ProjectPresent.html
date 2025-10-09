@@ -7,21 +7,29 @@
   <link rel="stylesheet" href="/Css/General.css">
 </head>
 <body>
+
+   <div class="topbar">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <div>
+          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+    </div>
   <!-- Sidebar -->
-  <div class="sidebar">
+  <div class="sidebar" id="sidebar">
     <div class="item">
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
+        <a href="ProjectInfo.html" style="background-color: #95491a;">
+            <img src="/Images/teacher.png" alt="Teacher Icon">
+            <span class="item-text">รายละเอียดโครงงาน</span>
+        </a>
+        <a href="ProjectProgressLog.html">
+            <img src="/Images/calenda.webp" alt="Teacher Icon">
+            <span class="item-text">บันทึกความคืบหน้า</span>
+        </a>
+          <a href="/Html/Login/index.html">
+            <img src="/Images/Exit.png" alt="Teacher Icon">
+            <span class="item-text">ออกจากระบบ</span>
+        </a>
     </div>
   </div>
 
@@ -33,7 +41,7 @@
           <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
           <div style="font-size:12px;">นักศึกษา</div>
         </div>
-        <div class="avatar"></div>
+        <img class="profile" src="/Images/defaultProfile.png">
       </div>
     </div>
 
@@ -46,8 +54,8 @@
 
         <input class="input" type="text" placeholder="ชื่อกลุ่ม">
         <input class="input" type="text" placeholder="ชื่อหัวข้อโครงงาน">
-        <textarea placeholder="ผบลัพท์ที่ได้"></textarea>
-        <textarea placeholder="วัตถุประสงค์"></textarea>
+        <textarea style="min-width: 300px; max-width: 300px; min-height: 100px; margin-top:10px;" placeholder="ผบลัพท์ที่ได้"></textarea>
+        <textarea style="min-width: 300px; max-width: 300px; min-height: 100px; margin-top:10px;" placeholder="วัตถุประสงค์"></textarea>
         
         <div>
           <h3>สมาชิก</h3>
@@ -59,8 +67,60 @@
         <div>
           <h3>อาจารย์ที่ปรึกษา</h3>
           <div class="custom select">
-          <input class="input" type="text" placeholder="เลือกอาจารย์ที่ปรึกษา">
-        </div>
+              <select id="Name" name="Name">
+                <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                <option value="">ผศ.นิมิต ศรีคำทา</option>
+                <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                <option value="">ผศ.สิวาลัย จินเจือ</option>
+                <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+              </select> 
+          </div>
+            <h3 style="margin-top: 8px;">อาจารย์ที่ปรึกษาร่วม</h3>
+            <div class="custom select">
+              <select id="Name" name="Name">
+                <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                <option value="">ผศ.นิมิต ศรีคำทา</option>
+                <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                <option value="">ผศ.สิวาลัย จินเจือ</option>
+                <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+              </select> 
+          </div>
         </div>
 
          <div>
@@ -87,6 +147,14 @@
 
 
     </div>
+
+     <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        btn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        });
+    </script>
 
 </body>
 </html>

@@ -9,43 +9,76 @@
 </head>
 <body>
 
-
-
     <div class="topbar">
         <button id="menu-btn" class="menu-btn">☰</button>
         <div>
-          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
-          <div style="font-size:12px;">นักศึกษา</div>
+          <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+          <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
         </div>
     </div>
 
     <!--sidebar-->
     <div class="sidebar" id="sidebar">
-    <div class="item">
-        <a href="ProjectInfo.html" >
-            <img src="/Images/teacher.png" alt="Teacher Icon">
-            <span class="item-text">รายละเอียดโครงงาน</span>
-        </a>
-        <a href="ProjectProgressLog.html" style="background-color: #95491a;">
-            <img src="/Images/calenda.webp" alt="Teacher Icon">
-            <span class="item-text">บันทึกความคืบหน้า</span>
-        </a>
-          <a href="/Html/Login/index.html">
-            <img src="/Images/Exit.png" alt="Teacher Icon">
-            <span class="item-text">ออกจากระบบ</span>
-        </a>
-    </div>
-  </div>
+        <div class="item">
+            <a href="ProjectList_Pr.html" style="background-color: #95491a;">
+                <img src="/Images/teacher.png" alt="Teacher Icon">
+                <span class="item-text">โครงงานนักศึกษา</span>
+            </a>
+            <a href="ProjectList_Pr_topic.html">
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_topic_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_final.html">
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบจบ</span>
+            </a>
+            <a href="ProjectList_Pr_final_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบจบ</span>
+            </a>
+            <a href="/Html/Login/index.html">
+                <img src="/Images/Exit.png" alt="Teacher Icon">
+                <span class="item-text">ออกจากระบบ</span>
+            </a>
+        </div>
+     </div>
 
     <div class="header">
-      <div class="title">รายระเอียดความคืบหน้าแต่ล่ะสัปดาห์</div>
+      <div class="title">รายระเอียดความคืบหน้า</div>
       <div class="topprofile">
         <div>
-          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
-          <div style="font-size:12px;">นักศึกษา</div>
+          <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+          <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
         </div>
         <img class="profile" src="/Images/defaultProfile.png">
       </div>
+    </div>
+
+    <div class="page">
+        <div class="main" style="gap: 0px;">
+            <div class="heading">รายระเอียดความคืบหน้าของกลุ่ม StoneColdTonic
+                <div style="font-size: 16px; font-weight: 0px;">หัวข้อโครงงาน : IT Knowledge Hub</div>
+            </div>
+            
+            
+
+            <div class="heading">สมาชิกโครงงาน
+                <div class="member-list">
+                    <div class="name">ชื่อ นาย สมเกียรติ เจริญดี<span style="color: var(--muted); margin-left: 15px;">6806022610179</span></div>
+                    <div class="name">ชื่อ นางสาว ยอดดี สมพร<span style="color: var(--muted); margin-left: 15px;">6806022610182</span></div>
+                </div>
+            </div>
+
+            <div class="btns">
+                    <a href="ProjectInfo_Pr.html" class="btn" style=" margin-top: 10px; margin-left: 0;">รายละเอียดโครงงาน</a>
+                </div>
+
+           
+        </div>
     </div>
     
     <div class="header title2">สัปดาห์นี้</div>
@@ -66,14 +99,14 @@
                 
                 <div class="meta" style="align-items: center;">
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ไฟล์แนบ : </div>
-                        <div style="width: 100px;"><input type="file" ></div>
+                        <div>-</div>
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ลิ้งค์ : </div>
-                        <input class="input" style="margin: 0px; max-width: 200px;" type="text" placeholder="กรอกลิงค์">
+                        <div>-</div>
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">คำอธิบาย :</div>
                 </div>
-                <textarea style=" min-height: 100px; margin-top:10px;"></textarea>
+                 <div class="textarea" style="min-width: 360px; max-width: 500px; min-height: 100px; margin-top:10px;"></div>
                 <div class="btns">
-                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0;">บันทึกความคืบหน้า</a>
+                    
                 </div>
             </div>
 
@@ -81,14 +114,31 @@
                 <div class="heading">ความคิดเห็นของอาจารย์</div>
 
                 <div class="card">
-                      <div class="muted">ว่างเปล่า...</div>
-            
-                    
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <input class="input" style="margin-top: 10px; " type="text" placeholder="พิมพ์ความคิดเห็น">
+                        <a href="#" class="btn" style="margin-top: 10px; margin-left: 0; align-self: end; justify-self: end;">ส่ง</a>
+                    </div>
                     
 
 
                 </div>
 
+                <div class="btns" >
+                    <input class="input" style="margin-right: 10px; " type="number" placeholder="ใส่เปอร์เซนต์">
+                    <a href="#" class="btn" style="margin-left: 0px; margin-top: 10px ;">ยืนยันรับทราบ</a>
+                </div>
+
+                
+                    
+                
+        
             </div>
         </div>
     </div>
@@ -118,7 +168,7 @@
                 </div>
                 <div class="textarea" style="min-width: 360px; max-width: 500px; min-height: 100px; margin-top:10px;">ทำการปรับปรุงหน้าเว็บและแก้ไขเล่มโปรเจคเพิ่มเติม</div>
                 <div class="btns">
-                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0; opacity:.4; pointer-events:none;">บันทึกความคืบหน้า</a>
+                    
                 </div>
             </div>
 
@@ -127,7 +177,19 @@
                 
                 <div class="card_scrollable">
 
-                     
+                      <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <input class="input" style="margin-top: 10px; " type="text" placeholder="พิมพ์ความคิดเห็น">
+                        <a href="#" class="btn" style=" margin-top: 10px; margin-left: 0; align-self: end; justify-self: end; opacity:.4; pointer-events:none;">ส่ง</a>
+                    </div>
+
+                    <hr style="border:none;border-top:3px solid var(--line); margin:16px 0;">
 
                     <div class="commentbox">
                         <div class="topprofilea">
@@ -202,7 +264,7 @@
                 </div>
                 <div class="textarea" style="min-width: 360px; max-width: 500px; min-height: 100px; margin-top:10px;">แก้ไขเล่มโปรเจค</div>
                 <div class="btns">
-                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0; opacity:.4; pointer-events:none; ">บันทึกความคืบหน้า</a>
+            
                 </div>
             </div>
 
@@ -211,7 +273,19 @@
 
                 <div class="card">
 
-                
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <input class="input" style="margin-top: 10px; " type="text" placeholder="พิมพ์ความคิดเห็น">
+                        <a href="#" class="btn" style=" margin-top: 10px; margin-left: 0; align-self: end; justify-self: end; opacity:.4; pointer-events:none;">ส่ง</a>
+                    </div>
+
+                    <hr style="border:none;border-top:3px solid var(--line); margin:16px 0;">
 
 
                     <div class="commentbox">

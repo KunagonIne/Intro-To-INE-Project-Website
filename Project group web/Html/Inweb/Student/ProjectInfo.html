@@ -9,21 +9,29 @@
 </head>
 <body>
 
+   <div class="topbar">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <div>
+          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+    </div>
+
     <!--sidebar-->
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
     <div class="item">
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
-      <a href="#">
-        <img src="/Images/teacher.png" alt="Teacher Icon">
-        <span class="item-text">Teacher</span>
-      </a>
+        <a href="ProjectInfo.html" style="background-color: #95491a;">
+            <img src="/Images/teacher.png" alt="Teacher Icon">
+            <span class="item-text">รายละเอียดโครงงาน</span>
+        </a>
+        <a href="ProjectProgressLog.html">
+            <img src="/Images/calenda.webp" alt="Teacher Icon">
+            <span class="item-text">บันทึกความคืบหน้า</span>
+        </a>
+          <a href="/Html/Login/index.html">
+            <img src="/Images/Exit.png" alt="Teacher Icon">
+            <span class="item-text">ออกจากระบบ</span>
+        </a>
     </div>
   </div>
 
@@ -34,7 +42,7 @@
           <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
           <div style="font-size:12px;">นักศึกษา</div>
         </div>
-        <div class="avatar"></div>
+        <img class="profile" src="/Images/defaultProfile.png">
       </div>
     </div>
     
@@ -91,7 +99,7 @@
                 <div class="heading">อาจารย์ที่ปรึกษา</div>
 
                 <div class="advisor-list">
-                    <div class="name">ชื่อ นาย สมเกียรติ เจริญดี</div>
+                    <div class="name">อ.ดร.กาญจน ณ ศรีธะ</div>
                 </div>
 
   
@@ -103,7 +111,8 @@
                 <div class="card">
                     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
                         <div class="heading" style="margin:0;">ความคืบหน้าปัจจุบัน</div>
-                        <a class="btn" href="ProjectPresent copy.html" style="--bg:#ffffff; --bg-hover:#e8e8e8; color: black;">เข้าดู</a>
+                        
+                        <a class="btn " href="ProjectPresent copy.html">เข้าดู</a>
                     </div>
 
                     <div style="margin-top:10px;">
@@ -124,8 +133,8 @@
   
 
                 <div class="btns" style="margin-top: 30px;">
-                    <a href="ProjectPresent.html" class="btn" style="--bg:#ffffff; --bg-hover:#e8e8e8; --text-a:#000000;">แก้ไขโครงงาน</a>
-                    <a href="ProjectSubmitTopic.html" class="btn" style="--bg:#119100; --bg-hover:#3f6f00; --text-a:#ffffff;">ยื่นสอบหัวข้อ</a>
+                    <a href="ProjectPresent.html" class="btn" >แก้ไขโครงงาน</a>
+                    <a href="ProjectSubmitTopic.html" class="btnY" >ยื่นสอบหัวข้อ</a>
                     <a class="btn" style="opacity:.4; pointer-events:none;">ยื่นสอบจบ</a>
                 </div>
 
@@ -133,6 +142,14 @@
             
         </div>
     </div>
+
+     <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        btn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        });
+    </script>
 </body>
 </html>
     

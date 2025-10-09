@@ -9,35 +9,46 @@
 </head>
 <body>
 
-   <div class="topbar">
+    <div class="topbar">
         <button id="menu-btn" class="menu-btn">☰</button>
         <div>
           <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
-          <div style="font-size:12px;">นักศึกษา</div>
+          <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
         </div>
     </div>
 
     <!--sidebar-->
     <div class="sidebar" id="sidebar">
-      
-    <div class="item">
-        <a href="ProjectInfo.html" style="background-color: #95491a;">
-            <img src="/Images/teacher.png" alt="Teacher Icon">
-            <span class="item-text">รายละเอียดโครงงาน</span>
-        </a>
-        <a href="ProjectProgressLog.html">
-            <img src="/Images/calenda.webp" alt="Teacher Icon">
-            <span class="item-text">บันทึกความคืบหน้า</span>
-        </a>
-          <a href="/Html/Login/index.html">
-            <img src="/Images/Exit.png" alt="Teacher Icon">
-            <span class="item-text">ออกจากระบบ</span>
-        </a>
-    </div>
-  </div>
+        <div class="item">
+            <a href="ProjectList_Pr.html" style="background-color: #95491a;">
+                <img src="/Images/teacher.png" alt="Teacher Icon">
+                <span class="item-text">โครงงานนักศึกษา</span>
+            </a>
+            <a href="ProjectList_Pr_topic.html">
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_topic_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_final.html">
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบจบ</span>
+            </a>
+            <a href="ProjectList_Pr_final_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบจบ</span>
+            </a>
+            <a href="/Html/Login/index.html">
+                <img src="/Images/Exit.png" alt="Teacher Icon">
+                <span class="item-text">ออกจากระบบ</span>
+            </a>
+        </div>
+     </div>
 
     <div class="header">
-      <div class="title">รายละเอียดโครงงาน</div>
+      <div class="title">รายละเอียดโครงงานของนักศึกษา</div>
       <div class="topprofile">
         <div>
           <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
@@ -51,15 +62,23 @@
         <div class="main">
         <!-- LEFT -->
             <div>
-              
+
+              <div class="btns">
+                <a class="btn" href="ProjectList_Pr.html" style=" margin: 0px 0px 8px 8px; margin-left: 0px;">ย้อนกลับ</a>
+                <a class="btn" href="ProjectProgressLog_Pr.html" >เข้าดูความคืบหน้า</a>
+              </div>
+
+              <h3 style="margin: 0px;">เปอร์เซ็นต์ความคืบหน้า : </h3>
                 <div class="progress-wrap" style="--percent:100%;">
                     <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" aria-label="Task progress">
-                        <div class="progress__fill" style="--percent:100%;"> <!-- fill uses same percent -->
+                        <div class="progress__fill" style="--percent:55%;"> <!-- fill uses same percent -->
                                 <!-- optional inner label; commented out so label is always visible via absolute .progress__label -->
                         </div>
-                        <div class="progress__label">100%</div>
+                        <div class="progress__label">55%</div>
                     </div>
                 </div>
+
+                <hr style="border:none;border-top:1px solid var(--line);margin:16px 0;">
 
                 <div class="meta">
 
@@ -69,14 +88,14 @@
                     <div class="label">หัวข้อโครงงาน :</div>
                     <div class="value">IT Knowledge Hub</div>
 
-                    <div class="label">ผลลัพท์ :</div>
+                    <div class="label">ผลลัพธ์ :</div>
                     <div class="value">เว็บไซต์ที่มีเนื้อหาความรู้ทางเทคโนโลยีที่เข้าใจง่าย เหมาะสำหรับนักเรียน นักศึกษา หรือบุคคลทั่วไป</div>
 
                     <div class="label">วัตถุประสงค์ :</div>
                     <div class="value">1.เว็บไซต์จะประกอบด้วยหน้าหลัก, หน้าหมวดหมู่เนื้อหา (เช่น AI, IoT, Cybersecurity, Programming), และหน้าติดต่อเรา<br>2.มีระบบแสดงบทความความรู้ พร้อมภาพประกอบและลิงก์อ้างอิง<br>3.รองรับการใช้งานบนอุปกรณ์คอมพิวเตอร์และโทรศัพท์มือถือ (Responsive Design)</div>
 
                     <div class="label">เอกสารประกอบ :</div>
-                    <div class="value" style="color:var(--accent);">Project.pdf</div>
+                    <div class="value" style="color:var(--accent);"><a href="#">Project.pdf</a></div>
                     
                     <div class="label">สถานะ :</div>
                     <div class="value" style="color:var(--yes);">ยื่นสอบหัวข้อผ่านแล้ว <span style="color:var(--hover);">/ รอยื่นสอบจบ</span></div>
@@ -115,11 +134,10 @@
                 <div class="card">
                     <div style="display:flex;justify-content:space-between;align-items:center;gap:8px;">
                         <div class="heading" style="margin:0;">ความคืบหน้าปัจจุบัน</div>
-                        <a class="btn" href="ProjectProgressLog.html" style="--bg:#ffffff; --bg-hover:#e8e8e8; color: black;">เข้าดู</a>
                     </div>
 
                     <div style="margin-top:10px;">
-                        <div style="color:var(--text); margin-bottom: 10px;">สัปดาห์ที่ 5 : <span style="color:var(--accent)">ส่งงานฉบับสุดท้าย</span></div>
+                        <div style="color:var(--text); margin-bottom: 10px;">สัปดาห์ที่ 3 : <span style="color:var(--accent)">-</span></div>
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 3px;">ไฟล์แนบ: <a style="text-decoration: none;" href="#">Project.pdf</a></div>
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 3px;">ลิงก์: <a style="text-decoration: none;" href="#">www.canva.com</a></div>
                         <div style="color:var(--muted); font-size:14px; margin-bottom: 3px;">คำอธิบาย:</div>
@@ -130,7 +148,8 @@
                     <div style="display:flex;align-items:center;gap:8px;margin-top:8px;" class="muted">ความคิดเห็นของอาจารย์ :</div>
                     <div style="display:flex;align-items:center;gap:8px;margin-top:8px;color: var(--muted);font-size: 15px;">
                       <img class="smallerprofile" src="/Images/defaultProfile.png">
-                      รศ.ดร.อนิราช มิ่งขวัญ : เช็คตรวจเรียบร้อยดี ครบ</div>
+                      รศ.ดร.อนิราช มิ่งขวัญ : เช็คตรวจเรียบร้อยดี ครบ
+                    </div>
                 </div>
 
                 
@@ -138,8 +157,8 @@
   
 
                 <div class="btns" style="margin-top: 30px;">
-                    <a href="ProjectProgressLog.html" class="btn" style="--bg:#ffffff; --bg-hover:#e8e8e8; --text-a:#000000;">ส่งความคืบหน้าปัจจุบัน</a>
-                    <a href="ProjectFinalSubmit.html" class="btnY" >ยื่นสอบจบ</a>
+                   
+                 
                 </div>
 
             </div>
@@ -147,13 +166,15 @@
         </div>
     </div>
 
-     <script>
+    <script>
         const btn = document.getElementById('menu-btn');
         const sidebar = document.getElementById('sidebar');
         btn.addEventListener('click', () => {
         sidebar.classList.toggle('show');
         });
     </script>
+
+
 </body>
 </html>
     
