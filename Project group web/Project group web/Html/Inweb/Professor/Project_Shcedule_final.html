@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>กำหนดวันสอบจบ</title>
+  <link rel="stylesheet" href="/Css/General.css">
+  <link rel="icon" href="/Images/logo.jpg" type="image/png">
+</head>
+<body>
+
+    <div class="topbar">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <div>
+          <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+          <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+        </div>
+    </div>
+  <!-- Sidebar -->
+  <div class="sidebar" id="sidebar">
+        <div class="item">
+            <a href="ProjectList_Pr.html" >
+                <img src="/Images/teacher.png" alt="Teacher Icon">
+                <span class="item-text">โครงงานนักศึกษา</span>
+            </a>
+            <a href="ProjectList_Pr_topic.html" >
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_topic_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบหัวข้อ</span>
+            </a>
+            <a href="ProjectList_Pr_final.html" style="background-color: #95491a;">
+                <img src="/Images/calenda.webp" alt="Teacher Icon">
+                <span class="item-text">คำร้องยื่นสอบจบ</span>
+            </a>
+            <a href="ProjectList_Pr_final_check.html">
+                <img src="/Images/check.png" alt="Teacher Icon">
+                <span class="item-text">ลงสถานะโครงงานสอบจบ</span>
+            </a>
+            <a href="/index.html">
+                <img src="/Images/Exit.png" alt="Teacher Icon">
+                <span class="item-text">ออกจากระบบ</span>
+            </a>
+        </div>
+     </div>
+
+    <!-- Main content -->
+     <div class="header">
+      <div class="title">กำหนดวันสอบจบ</div>
+      <div class="topprofile">
+        <div>
+          <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+         <img class="profile" src="/Images/defaultProfile.png">
+      </div>
+    </div>
+
+    <div class="page"> 
+        <div class="meta2">
+    
+                
+            <div>
+                <h3>วันสอบ</h3>
+                <input class="input" type="date">
+            </div>
+            <div>
+                <h3>เวลาสอบ</h3>
+                <input class="input" type="time">
+            </div>
+            <div>
+                <h3>สถานที่สอบ</h3>
+                <input class="input" type="text" placeholder="สถานที่">
+            </div>
+                
+            
+
+            <div style="grid-column-start: 1;">
+                <h3>กรรมการ 1</h3>
+                <div class="custom select">
+                    <select id="Name" name="Name">
+                        <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                        <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                        <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                        <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                        <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                        <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                        <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                        <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                        <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                        <option value="">ผศ.นิมิต ศรีคำทา</option>
+                        <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                        <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                        <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                        <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                        <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                        <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                        <option value="">ผศ.สิวาลัย จินเจือ</option>
+                        <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                        <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                        <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                        <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                        <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                        <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+                    </select> 
+                </div>
+                <div>
+                    <h3 style="margin-top: 8px;">กรรมการ 3</h3>
+                    <div class="custom select">
+                        <select id="Name" name="Name">
+                            <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                            <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3>กรรมการ 2</h3>
+                <div class="custom select">
+                    <select id="Name" name="Name">
+                        <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                        <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                        <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                        <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                        <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                        <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                        <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                        <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                        <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                        <option value="">ผศ.นิมิต ศรีคำทา</option>
+                        <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                        <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                        <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                        <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                        <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                        <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                        <option value="">ผศ.สิวาลัย จินเจือ</option>
+                        <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                        <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                        <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                        <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                        <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                        <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+                    </select> 
+                </div>
+                <div>
+                    <h3 style="margin-top: 8px;">กรรมการ 4</h3>
+                    <div class="custom select">
+                        <select id="Name" name="Name">
+                            <option value="">รศ.ดร.อนิราช มิ่งขวัญ</option>
+                            <option value="">ผศ.อรบุษป์ วุฒิกมลชัย</option>
+                            <option value="">ผศ.ดร.บีสุดา ดาวเรือง</option>
+                            <option value="">ผศ.ดร.ขนิษฐา นามี</option>
+                            <option value="">อ.ดร.กาญจน ณ ศรีธะ</option>
+                            <option value="">ผศ.นพดล บูรณ์กุศล</option>
+                            <option value="">ผศ.จสต.นพเก้า ทองใบ</option>
+                            <option value="">ผศ.ดร.นิติการ นาคเจือทอง</option>
+                            <option value="">ผศ.ดร.นัฎฐพันธ์ นาคพงษ์</option>
+                            <option value="">ผศ.นิมิต ศรีคำทา</option>
+                            <option value="">อ.ดร.พิทย์พิมล ชูรอด</option>
+                            <option value="">ผศ.ดร.พาฝัน ดวงไพศาล</option>
+                            <option value="">อ.ดร.ประดิษฐ์ พิทักษ์เสถียรกุล</option>
+                            <option value="">ผศ.พีระศักดิ์ เสรีกุล</option>
+                            <option value="">ผศ.สมชัย เชียงพงศ์พันธุ์</option>
+                            <option value="">ผศ.ดร.สุปีติ กุลจันทร์</option>
+                            <option value="">ผศ.สิวาลัย จินเจือ</option>
+                            <option value="">ผศ.ดร.สุพาภรณ์ ซิ้มเจริญ</option>
+                            <option value="">ผศ.ดร.ศรายุทธ ธเนศสกุลวัฒนา</option>
+                            <option value="">อ.ดร.ศิรินทรา แว่วศรี</option>
+                            <option value="">อ.ดร.วัชรชัย คงศิริวัฒนา</option>
+                            <option value="">ผศ.ดร.วันทนี ประจวบศุภกิจ</option>
+                            <option value="">รศ.ดร.ยุพิน สรรพคุณ</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div class="btns" style="justify-self: end; align-self: end;">
+                <div class="btn" style="--bg:#119100; --bg-hover:#3f6f00; --text-a:#ffffff;"><a href="ProjectList_Pr_topic.html">กำหนดวันสอบ</a></div>
+                <div class="btn" style="--bg:#ff570f; --bg-hover:#bf3900; --text-a:#ffffff;"><a href="ProjectList_Pr_topic.html">ยกเลิก</a></div>
+            </div>
+
+        </div>
+        
+    </div>
+        
+    <div class="header" style="margin-bottom:0px;"><h2 style="margin: 0px;">รายละเอียดโครงงาน</h2></div>
+        
+    <div class="page">
+        <div class="main">
+            <div>
+
+              <h3 style="margin: 0px;">เปอร์เซ็นต์ความคืบหน้า : </h3>
+                <div class="progress-wrap" style="--percent:100%;">
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" aria-label="Task progress">
+                        <div class="progress__fill" style="--percent:100%;"> <!-- fill uses same percent -->
+                                <!-- optional inner label; commented out so label is always visible via absolute .progress__label -->
+                        </div>
+                        <div class="progress__label">100%</div>
+                    </div>
+                </div>
+
+                <hr style="border:none;border-top:1px solid var(--line);margin:16px 0;">
+
+                <div class="meta">
+
+                    <div class="label" >ชื่อกลุ่ม :</div>
+                    <div class="value">StoneColdTonic</div>
+
+                    <div class="label">หัวข้อโครงงาน :</div>
+                    <div class="value">IT Knowledge Hub</div>
+
+                    <div class="label">ผลลัพธ์ :</div>
+                    <div class="value">เว็บไซต์ที่มีเนื้อหาความรู้ทางเทคโนโลยีที่เข้าใจง่าย เหมาะสำหรับนักเรียน นักศึกษา หรือบุคคลทั่วไป</div>
+
+                    <div class="label">วัตถุประสงค์ :</div>
+                    <div class="value">1.เว็บไซต์จะประกอบด้วยหน้าหลัก, หน้าหมวดหมู่เนื้อหา (เช่น AI, IoT, Cybersecurity, Programming), และหน้าติดต่อเรา<br>2.มีระบบแสดงบทความความรู้ พร้อมภาพประกอบและลิงก์อ้างอิง<br>3.รองรับการใช้งานบนอุปกรณ์คอมพิวเตอร์และโทรศัพท์มือถือ (Responsive Design)</div>
+
+                    <div class="label">เอกสารประกอบ :</div>
+                    <div class="value" style="color:var(--accent);"><a href="#">Project.pdf</a></div>
+                    
+                    <div class="label">สถานะ :</div>
+                    <div class="value" style="color:var(--text);">ยื่นสอบหัวข้อ </div>
+
+                    <div class="label">วันสอบเสนอหัวข้อ :</div>
+                    <div class="value">11/9/2568</div>
+
+                    <div class="label">วันสอบจบ :</div>
+                    <div class="value">-</div>
+
+                </div>
+            </div>
+
+
+            <div class="panel">
+                <div class="heading">สมาชิกโครงงาน</div>
+                <div class="member-list">
+                    <div class="name">ชื่อ นาย สมเกียรติ เจริญดี<span style="color: var(--muted); margin-left: 15px;">6806022610179</span></div>
+                    <div class="name">ชื่อ นางสาว ยอดดี สมพร<span style="color: var(--muted); margin-left: 15px;">6806022610182</span></div>
+                </div>
+                
+            
+
+                <hr style="border:none;border-top:1px solid var(--line);margin:16px 0;">
+
+                <div class="heading">อาจารย์ที่ปรึกษา</div>
+
+                <div class="advisor-list">
+                    <div class="name">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                </div>
+            </div>
+
+        </div>
+
+         
+    </div>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        btn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        });
+    </script>
+
+</body>
+</html>

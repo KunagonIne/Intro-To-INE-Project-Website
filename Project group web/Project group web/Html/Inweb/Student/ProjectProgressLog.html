@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>บันทึกความคืบหน้า</title>
+  <link rel="stylesheet" href="/Css/General.css">
+    <link rel="icon" href="/Images/logo.jpg" type="image/png">
+</head>
+<body>
+
+
+
+    <div class="topbar">
+        <button id="menu-btn" class="menu-btn">☰</button>
+        <div>
+          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+    </div>
+
+    <!--sidebar-->
+    <div class="sidebar" id="sidebar">
+    <div class="item">
+        <a href="ProjectInfo.html" >
+            <img src="/Images/teacher.png" alt="Teacher Icon">
+            <span class="item-text">รายละเอียดโครงงาน</span>
+        </a>
+        <a href="ProjectProgressLog.html" style="background-color: #95491a;">
+            <img src="/Images/calenda.webp" alt="Teacher Icon">
+            <span class="item-text">บันทึกความคืบหน้า</span>
+        </a>
+          <a href="/index.html">
+            <img src="/Images/Exit.png" alt="Teacher Icon">
+            <span class="item-text">ออกจากระบบ</span>
+        </a>
+    </div>
+  </div>
+
+    <div class="header">
+      <div class="title">รายระเอียดความคืบหน้าแต่ล่ะสัปดาห์</div>
+      <div class="topprofile">
+        <div>
+          <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+          <div style="font-size:12px;">นักศึกษา</div>
+        </div>
+        <img class="profile" src="/Images/defaultProfile.png">
+      </div>
+    </div>
+    
+    <div class="header title2">สัปดาห์นี้</div>
+    <div class="page">
+        
+        <div class="main">
+            <div>
+                <div class="heading">สัปดาห์ที่ 3 <span class="label">( ยังไม่ได้ทำการบันทึก )</span></div>
+
+                <div class="progress-wrap" style="--percent:100%;">
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" aria-label="Task progress">
+                        <div class="progress__fill" style="--percent:55%;"> <!-- fill uses same percent -->
+                                <!-- optional inner label; commented out so label is always visible via absolute .progress__label -->
+                        </div>
+                        <div class="progress__label">55%</div>
+                    </div>
+                </div>
+                
+                <div class="meta" style="align-items: center;">
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ไฟล์แนบ : </div>
+                        <div style="width: 100px;"><input type="file" ></div>
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ลิ้งค์ : </div>
+                        <input class="input" style="margin: 0px; max-width: 200px;" type="text" placeholder="กรอกลิงค์">
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">คำอธิบาย :</div>
+                </div>
+                <textarea style=" margin-top:10px;"></textarea>
+                <div class="btns">
+                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0;">บันทึกความคืบหน้า</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="heading">ความคิดเห็นของอาจารย์</div>
+
+                <div class="card">
+                      <div class="muted">ว่างเปล่า...</div>
+            
+                    
+                    
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="header title2">สัปดาห์ที่ผ่านมา</div>
+    <div class="page">
+        
+        <div class="main">
+            <div>
+                <div class="heading">สัปดาห์ที่ 2 <span class="label" style="--muted: #18941e;">( ทำการบันทึกแล้ว )</span></div>
+
+                <div class="progress-wrap" style="--percent:100%;">
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" aria-label="Task progress">
+                        <div class="progress__fill" style="--percent:55%;"> <!-- fill uses same percent -->
+                                <!-- optional inner label; commented out so label is always visible via absolute .progress__label -->
+                        </div>
+                        <div class="progress__label">55%</div>
+                    </div>
+                </div>
+                
+                <div class="meta" style="align-items: center;">
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ไฟล์แนบ : </div>
+                        <div><a>ProjectFile2.pdf</a></div>
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ลิ้งค์ : </div>
+                        <div><a>www.canva2.com</a></div>
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">คำอธิบาย :</div>
+                </div>
+                <div class="textarea" style=" margin-top:10px;">ทำการปรับปรุงหน้าเว็บและแก้ไขเล่มโปรเจคเพิ่มเติม</div>
+                <div class="btns">
+                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0; opacity:.4; pointer-events:none;">บันทึกความคืบหน้า</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="heading">ความคิดเห็นของอาจารย์</div>
+                
+                <div class="card_scrollable">
+
+                     
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <div class="comment">ปรับปรุงเล่มโปรเจค</div>
+                    </div>
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">อ.ดร.กาญจน ณ ศรีธะ</div>
+                                <div style="font-size:12px;">อาจารย์ประจำวิชา</div>
+                            </div>
+                        </div>
+                        <div class="comment">รับทราบความคืบหน้า</div>
+                    </div>
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">นาย สมเกียรติ เจริญดี</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <div class="comment">ปรับปรุงเล่มโปรเจค</div>
+                    </div>
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">อ.ดร.กาญจน ณ ศรีธะ</div>
+                                <div style="font-size:12px;">อาจารย์ประจำวิชา</div>
+                            </div>
+                        </div>
+                        <div class="comment">รับทราบความคืบหน้า</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        
+        <div class="main">
+            <div>
+                <div class="heading">สัปดาห์ที่ 1 <span class="label" style="--muted: #18941e;">( ทำการบันทึกแล้ว )</span></div>
+
+                <div class="progress-wrap" style="--percent:100%;">
+                    <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="73" aria-label="Task progress">
+                        <div class="progress__fill" style="--percent:20%;"> <!-- fill uses same percent -->
+                                <!-- optional inner label; commented out so label is always visible via absolute .progress__label -->
+                        </div>
+                        <div class="progress__label">20%</div>
+                    </div>
+                </div>
+                
+                <div class="meta" style="align-items: center;">
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ไฟล์แนบ : </div>
+                        <div><a>ProjectFile.pdf</a></div>
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">ลิ้งค์ : </div>
+                        <div><a>www.canva.com</a></div>
+                        <div style="color:var(--muted); font-size:14px; margin-bottom: 5px;">คำอธิบาย :</div>
+                </div>
+                <div class="textarea" style=" margin-top:10px;">แก้ไขเล่มโปรเจค</div>
+                <div class="btns">
+                    <a href="Project100percent.html" class="btn" style=" margin-top: 10px; margin-left: 0; opacity:.4; pointer-events:none; ">บันทึกความคืบหน้า</a>
+                </div>
+            </div>
+
+            <div>
+                <div class="heading">ความคิดเห็นของอาจารย์</div>
+
+                <div class="card">
+
+                
+
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">รศ.ดร.อนิราช มิ่งขวัญ</div>
+                                <div style="font-size:12px;">อาจารย์ที่ปรึกษา</div>
+                            </div>
+                        </div>
+                        <div class="comment">ปรับปรุงเล่มโปรเจค</div>
+                    </div>
+
+                    <div class="commentbox">
+                        <div class="topprofilea">
+                            <img class="profilea" src="/Images/defaultProfile.png">
+                            <div>
+                                <div style="font-weight:600;">อ.ดร.กาญจน ณ ศรีธะ</div>
+                                <div style="font-size:12px;">อาจารย์ประจำวิชา</div>
+                            </div>
+                        </div>
+                        <div class="comment">รับทราบความคืบหน้า</div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+
+    <script>
+        const btn = document.getElementById('menu-btn');
+        const sidebar = document.getElementById('sidebar');
+        btn.addEventListener('click', () => {
+        sidebar.classList.toggle('show');
+        });
+    </script>
+
+    
+</body>
+</html>
+    
+</body>
+</html>
